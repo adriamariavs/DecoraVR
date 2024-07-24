@@ -13,7 +13,6 @@ export default function Cadastro() {
   <TextInput style={styles.InputName} placeholder="Senha" />
   <TextInput style={styles.InputName} placeholder="Confirmar senha" />
 
-
         </View>
           </View>
     );

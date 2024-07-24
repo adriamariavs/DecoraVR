@@ -9,83 +9,71 @@ export const styles = StyleSheet.create({
   },
 
   //Tela BOAS-VINDAS
+
   ImgBoasVindas: {
-    width: '100%',
-    height: '100%',
+    width: "100%",
+    height: "100%",
   },
 
   TextBoasVindas: {
     fontFamily: "CrimsonText-Regular",
     fontSize: 30,
-    textAlign: 'left',
+    textAlign: "left",
+  },
+
+  BtnHome: {
+    alignSelf: "center",
+    alignItems: "center",
+    justifyContent: "center",
+    height: 40,
+    width: 120,
+    backgroundColor: "#C0C0C0",
+    borderRadius: 13,
+    elevation: 9,
+    borderColor: "black",
+    marginTop: 40,
+    marginLeft: 250,
+    flexDirection: "row",
+    right:25
   },
 
   //Tela Login
+
   BtnLogin: {
-    alignSelf: 'center',
+    alignSelf: "center",
     marginTop: 25,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
     height: 30,
     width: 200,
-    backgroundColor: '#d4a57b',
+    backgroundColor: "#d4a57b",
     borderRadius: 25,
     borderBottomWidth: 1,
-    borderColor: 'black',
-    margin: 7
+    borderColor: "black",
+    margin: 7,
   },
 
   Welcome: {
-   fontSize: 25,
-   right: 70 ,
-   fontWeight: 'bold',
-   marginBottom: 40,
-   marginTop: 15,
+    fontSize: 25,
+    right: 70,
+    fontWeight: "bold",
+    marginBottom: 40,
+    marginTop: 15,
   },
 
-  TelaLogin:{
+  TelaLogin: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'flex-start',
+    alignItems: "center",
+    justifyContent: "flex-start",
     paddingTop: 35,
-  
   },
 
   InputName: {
-   width: 320,
-   height: 30,
-   borderBottomWidth: 1,
-   borderBottomColor: 'black',
-   marginTop: 10,
-  },
-
-  //Pag Cadastro:
-  ViewCadastro: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'flex-start',
-    paddingTop: 60,
-  },
-
-  TituloCds: {
-    fontSize: 25,
-    right: 80 ,
-    fontWeight: 'bold',
-    marginBottom: 40,
-  },
-
-  BtnCds: {
-    alignSelf: 'center',
-    marginTop: 25,
-    alignItems: 'center',
-    justifyContent: 'center',
+    width: 320,
     height: 30,
-    width: 200,
-    backgroundColor: '#d4a57b',
-    borderRadius: 25,
     borderBottomWidth: 1,
-    borderColor: 'black',
-    margin: 7
+    borderBottomColor: "black",
+    marginTop: 10,
   },
 
-})
+});

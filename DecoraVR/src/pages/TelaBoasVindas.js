@@ -1,4 +1,5 @@
-import { ImageBackground, Text } from "react-native";
+import { ImageBackground, Text, TouchableOpacity } from "react-native";
+import ButtonComponents from "../componentes/ButtonComponents";
 import { styles } from "../Styles/styles";
 import { View } from "react-native";
 import { useFonts } from "expo-font";
@@ -84,7 +85,7 @@ export default function TelaBoasVindas() {
           marginRight: 10 }}>
           beautiful.
         </Text>
-      
+ 
       </View>
     </ImageBackground>
   );
