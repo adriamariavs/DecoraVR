@@ -1,5 +1,4 @@
 import { ImageBackground, Text, TouchableOpacity } from "react-native";
-import ButtonComponents from "../componentes/ButtonComponents";
 import { styles } from "../Styles/styles";
 import { View } from "react-native";
 import { useFonts } from "expo-font";
@@ -35,57 +34,74 @@ export default function TelaBoasVindas() {
       style={styles.ImgBoasVindas}
     >
       <View>
-        <Text style={{ 
-          fontSize: 30, 
-          fontFamily: "CrimsonTextFina", 
-          marginLeft: 'auto', 
-          marginTop: 100, 
-          marginRight: 10, }}>
+        <Text
+          style={{
+            fontSize: 30,
+            fontFamily: "CrimsonTextFina",
+            marginLeft: "auto",
+            marginTop: 100,
+            marginRight: 10,
+          }}
+        >
           MAKE YOUR
         </Text>
 
-        <Text style={{ 
-          fontSize: 30, 
-          fontFamily: "CrimsonText", 
-          marginLeft: 'auto', 
-          marginRight: 5, 
-          marginTop: -10 }}>
+        <Text
+          style={{
+            fontSize: 30,
+            fontFamily: "CrimsonText",
+            marginLeft: "auto",
+            marginRight: 5,
+            marginTop: -10,
+          }}
+        >
           HOME BEAUTIFUL
         </Text>
 
-        <Text style={{ 
-          fontSize: 18, 
-          fontFamily: "Dosis", 
-          marginLeft: 'auto', 
-          marginRight: 10, 
-          marginTop: 20 }}>
+        <Text
+          style={{
+            fontSize: 18,
+            fontFamily: "Dosis",
+            marginLeft: "auto",
+            marginRight: 10,
+            marginTop: 20,
+          }}
+        >
           The best simple place where you
         </Text>
 
-        <Text style={{ 
-          fontSize: 18, 
-          fontFamily: "Dosis", 
-          marginLeft: 'auto', 
-          marginRight: 10 }}>
+        <Text
+          style={{
+            fontSize: 18,
+            fontFamily: "Dosis",
+            marginLeft: "auto",
+            marginRight: 10,
+          }}
+        >
           discover most wonderful
         </Text>
 
-        <Text style={{ 
-          fontSize: 18, 
-          fontFamily: "Dosis", 
-          marginLeft: 'auto', 
-          marginRight: 10 }}>
+        <Text
+          style={{
+            fontSize: 18,
+            fontFamily: "Dosis",
+            marginLeft: "auto",
+            marginRight: 10,
+          }}
+        >
           furnitures and make your home
         </Text>
-        
-        <Text style={{ 
-          fontSize: 18, 
-          fontFamily: "Dosis", 
-          marginLeft: 'auto', 
-          marginRight: 10 }}>
+
+        <Text
+          style={{
+            fontSize: 18,
+            fontFamily: "Dosis",
+            marginLeft: "auto",
+            marginRight: 10,
+          }}
+        >
           beautiful.
         </Text>
- 
       </View>
     </ImageBackground>
   );

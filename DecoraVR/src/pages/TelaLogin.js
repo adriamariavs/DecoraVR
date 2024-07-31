@@ -1,6 +1,6 @@
 import { View, Text, TextInput, ImageBackground, Animated } from "react-native"
 import { styles } from "../Styles/styles";
-import { useState } from "react";
+import { useState } from "react-native";
 
 export default function Login() {
 
