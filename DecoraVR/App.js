@@ -1,28 +1,29 @@
 import React, { useState, useEffect } from "react";
+import { Text, View, Animated, ImageBackground, TouchableOpacity } from "react-native";
 import { useFonts } from "expo-font";
-import { Text, View, TouchableOpacity, Animated, ImageBackground } from "react-native";
-import Index from "./src/routes";
-import { styles } from "../Styles/styles";
+import Index from "./src/rotas/Index";
+import { styles } from "./src/Styles/styles";
 
 export default function App() {
   const [start, setStart] = useState(false);
   const [heightValue] = useState(new Animated.Value(1000));
 
-  // Função para iniciar a animação quando o componente é montado
   useEffect(() => {
-    setTimeout(() => {
-      Animated.timing(heightValue, {
-        toValue: 0, // Defina o valor final da altura aqui
-        duration: 5000,
-        useNativeDriver: false, // `useNativeDriver` não é suportado para animações de layout
-      }).start();
-    }, 2000);
-  }, [start]);
+    if (start) {
+      setTimeout(() => {
+        Animated.timing(heightValue, {
+          toValue: 0,
+          duration: 5000,
+          useNativeDriver: false,
+        }).start();
+      }, 2000);
+    }
+  }, [start, heightValue]);
 
   const [fontsLoaded] = useFonts({
-    "CrimsonText: require("../assets/Fonts/CrimsonText-Bold.ttf"),
-    "CrimsonTextFina: require("../assets/Fonts/CrimsonText-Regular.ttf"),
-    "Dosis: require("../assets/Fonts/Dosis-VariableFont_wght.ttf"),
+    CrimsonText: require("./src/assets/Fonts/CrimsonText-Bold.ttf"),
+    CrimsonTextFina: require("./src/assets/Fonts/CrimsonText-Regular.ttf"),
+    Dosis: require("./src/assets/Fonts/Dosis-VariableFont_wght.ttf"),
   });
 
   if (!fontsLoaded) {
@@ -36,86 +37,29 @@ export default function App() {
           <Index />
         </View>
       ) : (
-        <View
-          style={{
-            flex: 1,
-          }}
-        >
+        <View style={{ flex: 1 }}>
           <ImageBackground
-            source={require("../image/TelaBoas-Vindas.png")}
+            source={require("./src/image/TelaBoas-Vindas.png")}
             style={styles.ImgBoasVindas}
           >
             <View>
-        <Text
-          style={{
-            fontSize: 30,
-            fontFamily: "CrimsonTextFina",
-            marginLeft: "auto",
-            marginTop: 100,
-            marginRight: 10,
-          }}
-        >
-          MAKE YOUR
-        </Text>
+              <Text style={styles.text1}>MAKE YOUR</Text>
+              <Text style={styles.text2}>HOME BEAUTIFUL</Text>
+              <Text style={styles.text3}>The best simple place where you</Text>
+              <Text style={styles.text4}>discover most wonderful</Text>
+              <Text style={styles.text5}>furnitures and make your home</Text>
+              <Text style={styles.text6}>beautiful.</Text>
 
-        <Text
-          style={{
-            fontSize: 30,
-            fontFamily: "CrimsonText",
-            marginLeft: "auto",
-            marginRight: 5,
-            marginTop: -10,
-          }}
-        >
-          HOME BEAUTIFUL
-        </Text>
-
-        <Text
-          style={{
-            fontSize: 18,
-            fontFamily: "Dosis",
-            marginLeft: "auto",
-            marginRight: 10,
-            marginTop: 20,
-          }}
-        >
-          The best simple place where you
-        </Text>
-
-        <Text
-          style={{
-            fontSize: 18,
-            fontFamily: "Dosis",
-            marginLeft: "auto",
-            marginRight: 10,
-          }}
-        >
-          discover most wonderful
-        </Text>
-
-        <Text
-          style={{
-            fontSize: 18,
-            fontFamily: "Dosis",
-            marginLeft: "auto",
-            marginRight: 10,
-          }}
-        >
-          furnitures and make your home
-        </Text>
-
-        <Text
-          style={{
-            fontSize: 18,
-            fontFamily: "Dosis",
-            marginLeft: "auto",
-            marginRight: 10,
-          }}
-        >
-          beautiful.
-        </Text>
+              <TouchableOpacity
+                style={styles.BtnHome}
+                onPress={() => setStart(true)}
+              >
+                <Text style={styles.btnText}>Get Started</Text>
+              </TouchableOpacity>
+            </View>
           </ImageBackground>
         </View>
+      )}
     </>
   );
 }
