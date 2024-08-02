@@ -1,45 +1,34 @@
-import { View, Text, TextInput, ImageBackground, Animated } from "react-native"
-import { styles } from "../Styles/styles";
-import { useState } from "react-native";
+import React, { useEffect, useRef } from 'react';
+import { View, Text, TextInput, Animated, ImageBackground } from 'react-native';
+import { styles } from '../Styles/styles';
 
-export default function Login() {
+export default function TelaLogin() {
+  const slideAnim = useRef(new Animated.Value(100)).current;
 
-    const [altura, setAltura] = useState(new Animated.Value(0));
+  useEffect(() => {
+    Animated.timing(slideAnim, {
+      toValue: 0, 
+      duration: 1000, 
+      useNativeDriver: true, 
+    }).start();
+  }, [slideAnim]);
 
-    Animated.sequence([
-     Animated.timing(
-        altura,
-        {
-            toValue: 500,
-            duration: 2000
-        }
-     )
-    ]).start();
-
-    return (
-    <ImageBackground source={require("../image/TelaBoas-Vindas.png")}
-    style={styles.ImgBoasVindas}
-    >
-    
-    <Animated.View style={{
-        width: '100%',
-        height: altura,
-        alignItems: 'center',
-        justifyContent: 'center',
-        backgroundColor: '#EDE9E4',
-        borderBottomLeftRadius: 50,
-        borderBottomRightRadius: 50,
-        }}>
-
-    <Text style={styles.Welcome}>Seja bem-vindo!</Text>
-    <TextInput style={styles.InputName} placeholder="E-mail" />
-    <TextInput
-    style={styles.InputName}
-    placeholder="Senha"
-    secureTextEntry={true}
-    />
-
+  return (
+    <ImageBackground
+        source={require("../image/TelaBoas-Vindas.png")}
+        style={styles.ImgBoasVindas}
+      >
+    <Animated.View style={[styles.ViewLogin, { transform: [{ translateY: slideAnim }] }]}>
+        <Text style={styles.Welcome}>Seja bem-vindo!</Text>
+        <TextInput style={styles.InputName} placeholder="E-mail" />
+        <TextInput
+          style={styles.InputName}
+          placeholder="Senha"
+          secureTextEntry={true}
+        />
     </Animated.View>
     </ImageBackground>
-    );
-  }
+  );
+}
+
+

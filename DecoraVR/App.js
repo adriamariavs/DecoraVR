@@ -42,7 +42,8 @@ export default function App() {
             source={require("./src/image/TelaBoas-Vindas.png")}
             style={styles.ImgBoasVindas}
           >
-            <View>
+            <View style={{ flex: 1, alignItems: "right"}}>
+            <View style={{ width: "100%", heigth: "100%", left: "20%", top: "18%"}}>
               <Text style={styles.text1}>MAKE YOUR</Text>
               <Text style={styles.text2}>HOME BEAUTIFUL</Text>
               <Text style={styles.text3}>The best simple place where you</Text>
@@ -56,6 +57,7 @@ export default function App() {
               >
                 <Text style={styles.btnText}>Get Started</Text>
               </TouchableOpacity>
+            </View>
             </View>
           </ImageBackground>
         </View>

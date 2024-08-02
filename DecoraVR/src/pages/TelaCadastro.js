@@ -1,19 +1,30 @@
-import { View, Text, TextInput } from "react-native";
+import { View, Text, TextInput, ImageBackground } from "react-native";
 import { styles } from "../Styles/styles";
 
-export default function Cadastro() {
+export default function TelaCadastro() {
   return (
     <View style={styles.container}>
-      <View style={styles.TelaLogin}>
-        <Text style={styles.Welcome}>Seja bem-vindo!</Text>
+      <ImageBackground
+        source={require("../image/TelaBoas-Vindas.png")}
+       style={styles.ImgBoasVindas}
+      >
+        <View style={styles.TelaCadastro}>
+          <Text style={styles.Welcome}>Seja bem-vindo!</Text>
 
-        <TextInput style={styles.InputName} placeholder="Nome completo" />
-        <TextInput style={styles.InputName} placeholder="E-mail" />
-        <TextInput style={styles.InputName} placeholder="Senha" />
-        <TextInput style={styles.InputName} placeholder="Confirmar senha" />
-      </View>
+          <TextInput style={styles.InputName} placeholder="Nome completo" />
+          <TextInput style={styles.InputName} placeholder="E-mail" />
+          <TextInput
+            style={styles.InputName}
+            placeholder="Senha"
+            secureTextEntry
+          />
+          <TextInput
+            style={styles.InputName}
+            placeholder="Confirmar senha"
+            secureTextEntry
+          />
+        </View>
+      </ImageBackground>
     </View>
   );
 }
-
-

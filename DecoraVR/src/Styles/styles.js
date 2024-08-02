@@ -22,49 +22,35 @@ export const styles = StyleSheet.create({
   },
 
   text1: {
-  fontSize: 25,
-  fontFamily: "CrimsonTextFina",
-  marginLeft: "auto",
-  marginTop: 130,
-  marginRight: 10,
+    fontSize: 25,
+    fontFamily: "CrimsonTextFina",
+  
   },
 
   text2: {
     fontSize: 24,
     fontFamily: "CrimsonText",
-    marginLeft: "auto",
-    marginRight: 5,
-    marginTop: -10,
   },
 
   text3: {
     fontSize: 16,
     fontFamily: "Dosis",
-    marginLeft: "auto",
-    marginRight: 10,
-    marginTop: 20,
   },
 
   text4: {
-  fontSize: 16,
-  fontFamily: "Dosis",
-  marginLeft: "auto",
-  marginRight: 10,
-},
+    fontSize: 16,
+    fontFamily: "Dosis",
+  },
 
-text5: {
-fontSize: 16,
-fontFamily: "Dosis",
-marginLeft: "auto",
-marginRight: 10,
-},
+  text5: {
+    fontSize: 16,
+    fontFamily: "Dosis",
+  },
 
-text6: {
-fontSize: 16,
-fontFamily: "Dosis",
-marginLeft: "auto",
-marginRight: 10,
-},
+  text6: {
+    fontSize: 16,
+    fontFamily: "Dosis",
+  },
 
   BtnHome: {
     alignSelf: "center",
@@ -72,18 +58,43 @@ marginRight: 10,
     justifyContent: "center",
     height: 40,
     width: 130,
-    backgroundColor: "#A9A9A9",
+    backgroundColor: "#ffd700",
     borderRadius: 13,
     elevation: 10,
     borderColor: "black",
     marginTop: 30,
-    marginLeft: 280,
     flexDirection: "row",
-    right:25
+    left: "15%",
   },
 
-  //Tela Login
+  //Tela Login e Cadastro
 
+  ViewLogin: {
+    width: '100%',
+    maxWidth: '120%',
+    height: '90%',
+    backgroundColor: '#ffffff',
+    borderRadius: 20,
+    padding: 30,
+    shadowColor: '#000',
+    top: '30%',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.2,
+    shadowRadius: 5,
+    elevation: 5,
+  },
+  ImgBoasVindas: {
+    flex: 1,
+    width: '100%',
+    height: '100%',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 10,
+    overflow: 'hidden',
+  },
   BtnLogin: {
     alignSelf: "center",
     marginTop: 25,
@@ -98,14 +109,6 @@ marginRight: 10,
     margin: 7,
   },
 
-  Welcome: {
-    fontSize: 25,
-    right: 70,
-    fontWeight: "bold",
-    marginBottom: 40,
-    marginTop: 15,
-  },
-
   TelaLogin: {
     flex: 1,
     alignItems: "center",
@@ -113,12 +116,47 @@ marginRight: 10,
     paddingTop: 35,
   },
 
-  InputName: {
-    width: 320,
-    height: 30,
-    borderBottomWidth: 1,
-    borderBottomColor: "black",
-    marginTop: 10,
+  TelaCadastro: {
+    width: '100%',
+    maxWidth: 350,
+    backgroundColor: '#ffffff',
+    borderRadius: 20,
+    padding: 30,
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.2,
+    shadowRadius: 5,
+    elevation: 5,
   },
-
+  Welcome: {
+    fontSize: 28,
+    fontWeight: 'bold',
+    marginBottom: 30,
+    color: '#FFDB58', 
+    textAlign: 'center',
+    fontFamily: 'sans-serif-medium',
+  },
+  InputName: {
+    width: '100%',
+    height: 50,
+    borderColor: '#b0bec5',
+    borderWidth: 1,
+    borderRadius: 10,
+    marginBottom: 15,
+    paddingHorizontal: 15,
+    backgroundColor: '#ffffff',
+    fontSize: 16,
+    fontFamily: 'sans-serif',
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 1,
+    },
+    shadowOpacity: 0.1,
+    shadowRadius: 3,
+    elevation: 2,
+  },
 });
