@@ -1,5 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { Text, View, Animated, ImageBackground, TouchableOpacity } from "react-native";
+import {
+  Text,
+  View,
+  Animated,
+  ImageBackground,
+  TouchableOpacity,
+} from "react-native";
 import { useFonts } from "expo-font";
 import Index from "./src/rotas/Index";
 import { styles } from "./src/Styles/styles";
@@ -42,22 +48,33 @@ export default function App() {
             source={require("./src/image/TelaBoas-Vindas.png")}
             style={styles.ImgBoasVindas}
           >
-            <View style={{ flex: 1, alignItems: "right"}}>
-            <View style={{ width: "100%", heigth: "100%", left: "20%", top: "18%"}}>
-              <Text style={styles.text1}>MAKE YOUR</Text>
-              <Text style={styles.text2}>HOME BEAUTIFUL</Text>
-              <Text style={styles.text3}>The best simple place where you</Text>
-              <Text style={styles.text4}>discover most wonderful</Text>
-              <Text style={styles.text5}>furnitures and make your home</Text>
-              <Text style={styles.text6}>beautiful.</Text>
-
-              <TouchableOpacity
-                style={styles.BtnHome}
-                onPress={() => setStart(true)}
+            <View style={{ flex: 1, alignItems: "right" }}>
+              <View
+                style={{
+                  width: "100%",
+                  heigth: "100%",
+                  left: "20%",
+                  top: "18%",
+                  textAlign:'left',
+                                 
+                }}
               >
-                <Text style={styles.btnText}>Get Started</Text>
-              </TouchableOpacity>
-            </View>
+                <Text style={styles.text1}>MAKE YOUR</Text>
+                <Text style={styles.text2}>HOME BEAUTIFUL</Text>
+                <Text style={styles.text3}>
+                  The best simple place where you
+                </Text>
+                <Text style={styles.text4}>discover most wonderful</Text>
+                <Text style={styles.text5}>furnitures and make your home</Text>
+                <Text style={styles.text6}>beautiful.</Text>
+
+                <TouchableOpacity
+                  style={styles.BtnHome}
+                  onPress={() => setStart(true)}
+                >
+                  <Text style={styles.btnText}>Get Started</Text>
+                </TouchableOpacity>
+              </View>
             </View>
           </ImageBackground>
         </View>
