@@ -28,7 +28,7 @@ export default function TelaLogin() {
       source={require("../image/TelaBoas-Vindas.png")}
       style={styles.ImgBoasVindas}
     >
-      <TouchableOpacity><AntDesign name="rightcircle" size={30} color="black" top={40} /></TouchableOpacity>
+      <TouchableOpacity><AntDesign name="rightcircle" size={30} color="black" top={40}  /></TouchableOpacity>
       <Animated.View
         style={[styles.ViewLogin, { transform: [{ translateY: slideAnim }] }]}
       >

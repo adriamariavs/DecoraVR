@@ -19,15 +19,18 @@ export const styles = StyleSheet.create({
     fontFamily: "CrimsonText-Regular",
     fontSize: 30,
     textAlign: "left",
+    fontFamily: "CrimsonText",
   },
 
   text1: {
-    fontSize: 25,
-    fontFamily: "CrimsonTextFina",
+    textAlign: 'right',
+    fontWeight: 'bold',
+    fontSize: 20,
   },
 
   text2: {
-    fontSize: 24,
+    textAlign: 'right',
+    fontSize: 20,
     fontFamily: "CrimsonText",
   },
 
@@ -40,10 +43,11 @@ export const styles = StyleSheet.create({
   text4: {
     fontSize: 16,
     fontFamily: "Dosis",
-    textAlign: "justify",
+    textAlign: 'right',
   },
 
   text5: {
+    textAlign: 'right',
     fontSize: 16,
     fontFamily: "Dosis",
   },
@@ -51,21 +55,15 @@ export const styles = StyleSheet.create({
   text6: {
     fontSize: 16,
     fontFamily: "Dosis",
+    textAlign: 'right',
   },
-
   BtnHome: {
-    alignSelf: "center",
-    alignItems: "center",
-    justifyContent: "center",
+    marginHorizontal: 5, 
+    padding: 10,
+    backgroundColor: '#000', 
+    borderRadius: 20,
     height: 40,
-    width: 130,
-    backgroundColor: "#090c0e",
-    borderRadius: 13,
-    elevation: 10,
-    borderColor: "#000",
-    marginTop: 30,
-    flexDirection: "row",
-    left: "15%",
+    width: "20%",
   },
   btnText: {
     color: "white",
@@ -189,33 +187,70 @@ export const styles = StyleSheet.create({
     paddingVertical: 15,
     alignItems: "center",
     marginTop: 20,
+    
   },
+
   ButtonText: {
     color: "#ffffff",
     fontSize: 18,
     fontWeight: "bold",
     fontFamily: "sans-serif-medium",
   },
+  
 
   //Tela Catálogo
    
   TitleCatalogo1: {
-    fontSize: 17,
-    marginLeft: "3%",
-    color: "#090c0e",
-    textAlign: "left",
-    fontFamily: "sans-serif-medium",
-  }, 
-
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginTop: 50, 
+    
+  },
   TitleCatalogo2: {
-    fontSize: 17,
-    marginLeft: "3%",
-    color: "#090c0e",
-    textAlign: "left",
-    fontFamily: "sans-serif-medium",
+    fontSize: 18,
+    fontWeight: 'normal',
+    fontWeight: 'bold',
+    marginBottom: 16,
+  },
+  inputContainer: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: 20, 
+    
   },
 
   TextInput: {
    shadowColor: "black",
   },
+
+  buttonContainer2: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginTop: 5, 
+    
+    
+  },
+  ViewCatálogo1: {
+    padding: 16,
+    
+    
+  },
+  searchSection: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#fff',
+    borderColor: 'gray',
+    borderWidth: 1,
+    borderRadius: 20,
+    width: '90%',
+    height: 55,
+  },
+  searchIcon: {
+    padding: 10,
+  },
+  
+  
+
+  
 });
+
