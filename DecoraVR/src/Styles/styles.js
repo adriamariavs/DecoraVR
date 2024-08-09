@@ -15,17 +15,11 @@ export const styles = StyleSheet.create({
     height: "100%",
   },
 
-  TextBoasVindas: {
-    fontFamily: "CrimsonText-Regular",
-    fontSize: 30,
-    textAlign: "left",
-    fontFamily: "CrimsonText",
-  },
-
   text1: {
     textAlign: 'right',
     fontWeight: 'bold',
     fontSize: 20,
+    fontFamily: "CrimsonText"
   },
 
   text2: {
@@ -62,8 +56,8 @@ export const styles = StyleSheet.create({
     padding: 10,
     backgroundColor: '#000', 
     borderRadius: 20,
-    height: 40,
-    width: "20%",
+    height: 45,
+    width: "50%",
   },
   btnText: {
     color: "white",
@@ -199,7 +193,31 @@ export const styles = StyleSheet.create({
   
 
   //Tela Catálogo
-   
+
+  box1: {
+    backgroundColor: 'lightgray',
+    width: 200,
+    height: 240,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginRight: 10,
+    borderRadius: 35,
+  },
+  boxText: {
+    fontSize: 12,
+    color: 'black',
+  },
+  BtnCatalogo: {
+      marginHorizontal: 5, 
+      padding: 10,
+      backgroundColor: '#000', 
+      borderRadius: 20,
+      height: 50,
+      width: "20%",
+      borderColor: 'gray',
+      borderWidth: 1,
+    },
+  
   TitleCatalogo1: {
     fontSize: 24,
     fontWeight: 'bold',
@@ -249,8 +267,205 @@ export const styles = StyleSheet.create({
     padding: 10,
   },
   
-  
+  //TELA CARRINHO
+  modal2: {
+    width: 20,
+    height: 30,
+  },
 
-  
+  flatListContent: {
+    justifyContent: "center",
+    flexGrow: 1,
+    alignItems: "center",
+  },
+
+  box: {
+    height: 100,
+    flexDirection: "row",
+    marginBottom: 10,
+    borderRadius: 20,
+    backgroundColor: "transparent",
+    justifyContent: "space-between",
+  },
+
+  containermodal: {
+    flex: 1,
+  },
+
+  resultado: {
+    fontSize: 20,
+    fontWeight: "200",
+    bottom: 50,
+    left: 35,
+    width: "50%",
+  },
+
+  btnpagar: {
+    backgroundColor: "red",
+    width: 120,
+    height: 50,
+    borderRadius: 50,
+    padding: 10,
+    justifyContent: "center",
+    alignItems: "center",
+    left: "60%",
+    marginTop: 20,
+    borderBottomWidth: 1,
+  },
+
+  funcao: {
+    fontSize: 20,
+    fontWeight: "700",
+    bottom: 50,
+    left: 75,
+  },
+
+  textCarrinho: {
+    fontSize: 20,
+    marginTop: 20,
+    left: 18,
+  },
+
+  modalprincipal: {
+    width: "100%",
+    height: "85%",
+    backgroundColor: "white",
+    borderRadius: 10,
+  },
+
+  //Dentro do MODAL
+
+  text: {
+    fontSize: 20,
+    fontWeight: "900",
+    marginTop: 50,
+    left: 25,
+  },
+
+  btnconcluir: {
+    backgroundColor: "red",
+    width: 120,
+    height: 50,
+    borderRadius: 50,
+    borderBottomWidth: 1,
+    padding: 10,
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: 30,
+    left: "60%",
+  },
+
+  viewDentroModal: {
+    width: 340,
+    height: 110,
+    marginTop: 50,
+    alignSelf: "center",
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 5 },
+    shadowOpacity: 0.5,
+    shadowRadius: 10,
+    elevation: 5,
+    borderRadius: 20,
+    backgroundColor: "white",
+  },
+
+  viewDentroModal2: {
+    width: 340,
+    height: 110,
+    marginTop: 30,
+    alignSelf: "center",
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 5 },
+    shadowOpacity: 0.5,
+    shadowRadius: 10,
+    elevation: 5,
+    borderRadius: 20,
+    backgroundColor: "white",
+  },
+
+  viewDentroModal3: {
+    width: 340,
+    height: 110,
+    marginTop: 30,
+    alignSelf: "center",
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 5 },
+    shadowOpacity: 0.5,
+    shadowRadius: 10,
+    elevation: 5,
+    borderRadius: 20,
+    backgroundColor: "white",
+  },
+
+  risco: {
+    height: 1,
+    width: "100%",
+    marginTop: 50,
+    backgroundColor: "#C0C0C0",
+  },
+
+  risco1: {
+    height: 1,
+    width: "100%",
+    marginTop: -15,
+    backgroundColor: "#C0C0C0",
+  },
+
+  botaorolagem: {
+    width: 50,
+    height: 50,
+  },
+
+  resultadoModal: {
+    fontSize: 20,
+    fontWeight: "200",
+    bottom: 60,
+    left: 30,
+    width: "50%",
+  },
+
+  funcaoModal: {
+    fontSize: 20,
+    fontWeight: "700",
+    bottom: 60,
+    left: 65,
+  },
+
+  cartaoDebito: {
+    marginTop: -80,
+    left: 150,
+    fontFamily: "Baskervville-Regular",
+  },
+
+  cartaoCredito: {
+    marginTop: -35,
+    left: 150,
+    fontFamily: "Baskervville-Regular",
+  },
+
+  Pix: {
+    marginTop: -50,
+    left: 155,
+    fontFamily: "Baskervville-Regular",
+  },
+
+  visa: {
+    height: "80%",
+    width: "30%",
+    left: 10,
+    borderRadius: 25,
+    marginTop: 40,
+  },
+
+  master: {
+    height: "80%",
+    width: "30%",
+    left: 10,
+    borderRadius: 25,
+    marginTop: -5,
+  },
+
+
 });
+
 
